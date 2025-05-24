@@ -1,0 +1,13 @@
+/* History page styles */
+.history-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.history-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Add more specific styles for history page as needed */ 

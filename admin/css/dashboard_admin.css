@@ -1,0 +1,167 @@
+body {
+    background: #f2f2f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px 25px 25px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-top: 30px;
+}
+h2 {
+    margin-bottom: 18px;
+    color: #333;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+th, td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+th {
+    background: #f1f1f1;
+}
+a.logout-btn {
+    display: inline-block;
+    margin-top: 18px;
+    background: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+a.logout-btn:hover {
+    background: #0056b3;
+}
+a {
+    color: #007bff;
+    text-decoration: underline;
+}
+a:hover {
+    color: #0056b3;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background: none;
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background: #fff;
+    margin: 10vh auto;
+    padding: 30px 25px 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.18);
+    max-width: 400px;
+    width: 90%;
+    position: relative;
+    animation: modalShow 0.2s;
+}
+@keyframes modalShow {
+    from { transform: translateY(-40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+}
+.close-modal:hover {
+    color: #e74c3c;
+}
+.modal-overlay {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.25);
+}
+.modal[style*='block'] {
+    display: flex !important;
+}
+.modal-overlay[style*='block'] {
+    display: block !important;
+}
+
+/* Modal Edit Barang Form Styles */
+.modal-form {
+    width: 100%;
+    padding: 0;
+}
+.modal-form h3 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    color: #007bff;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+.form-group {
+    margin-bottom: 16px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #222;
+}
+.modal-form input[type="text"],
+.modal-form input[type="number"] {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 2px;
+    background: #fafbfc;
+    transition: border 0.2s;
+}
+.modal-form input[type="number"]:focus,
+.modal-form input[type="text"]:focus {
+    border: 1.5px solid #007bff;
+    outline: none;
+}
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: background 0.2s;
+}
+.btn-submit:hover {
+    background: #0056b3;
+}
+
